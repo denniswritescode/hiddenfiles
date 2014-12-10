@@ -14,7 +14,7 @@ hiddenfiles hide
 It'll also respond to "true", "yes", "false", and "no". I hate having to look up the full command. because I'm #laz
 
 ### to install
-run these ...
+run these on the commands in a terminal...
 ```shell
 # clone the repo
 git clone https://github.com/dennisporterjr/hiddenfiles.git && cd hiddenfiles
@@ -25,3 +25,4 @@ sudo mv hiddenfiles /usr/local/bin/hiddenfiles && cd /usr/local/bin/
 # make it executable..
 sudo chmod 755 hiddenfiles
 ```
+have fun not googling for this crap again lol :-)
