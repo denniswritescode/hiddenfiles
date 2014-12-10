@@ -11,4 +11,17 @@ And this...
 hiddenfiles hide
 ```
 
-It'll also respond to "true", "on", "false", and "off". I hate having to look up the full command. because I'm #laz
+It'll also respond to "true", "yes", "false", and "no". I hate having to look up the full command. because I'm #laz
+
+### to install
+run these ...
+```shell
+# clone the repo
+git clone https://github.com/dennisporterjr/hiddenfiles.git && cd hiddenfiles
+
+# move to your local bin folder (you may or may not need to use "sudo")
+sudo mv hiddenfiles /usr/local/bin/hiddenfiles && cd /usr/local/bin/
+
+# make it executable..
+sudo chmod 755 hiddenfiles
+```
