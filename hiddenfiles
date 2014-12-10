@@ -1,0 +1,17 @@
+#!/bin/sh
+# This shell script toggles between showing hidden files and hiding them
+# on Mac OSX.
+
+if [ "$1" == "show" -o "$1" == "true" -o "$1" == "yes" ];
+then
+  # just change the setting and restart Finder...
+  defaults write com.apple.finder AppleShowAllFiles YES && killall Finder
+else
+  if [ "$1" == "hide" -o "$1" == "false" -o "$1" == "no" ];
+  then
+    # just change the setting and restart Finder...
+    defaults write com.apple.finder AppleShowAllFiles NO && killall Finder
+  else
+    printf "\nERROR\n  SYNTAX >> hiddenfiles [ show | true | yes | no | false | hide ]\n"
+  fi
+fi
